@@ -19,6 +19,8 @@ load_dotenv()
 # Initialize Flask app
 app = Flask(__name__)
 
+# this is the comment made by dendup
+
 # Configuration
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'dev-secret-key')
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'postgresql://todouser:todopass@localhost:5432/todoapp')
